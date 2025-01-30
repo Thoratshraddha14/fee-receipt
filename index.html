@@ -9,8 +9,8 @@
         }
         .container{
             background-color: #fff;
-            width: 800px;
-            height: 900px;
+            width: 45%;
+            height: auto; 
             margin-left: 550px;
             border: 1px solid black;
         }
@@ -64,7 +64,7 @@
             text-align: start;
         }
         .amount{
-            width: 220px;
+            width: 255px;
             border: 1px solid gray;
             border-left: none;
             margin-right: 3px;
@@ -101,6 +101,125 @@
         .receipt-footer-p{
             margin-top: -15px;
         }
+         /* Mobile Devices */
+
+      @media screen and (min-width: 400px) and (max-width: 600px) {
+        .container{
+            background-color: #fff;
+            width: 100%;
+            height: auto; 
+            margin-left: 1px;
+            border: 1px solid black;
+        }
+        .receipt-header{
+            height: 100px;
+        }
+        .logo{
+            margin: 15px 5px;
+            height: 35px;
+        }
+        h3{
+            text-align: center;
+            font-size: 15px;
+            margin-top: -60px;
+            margin-left: 120px;
+        }
+        .address{
+            margin-top: -15px;
+            margin-left: 170px;
+            font-size: 13px;
+        }
+        .fee-receipt{ 
+            height:40px;
+            margin-top: -13px;
+        }
+        .fee-receipt-inform{
+            text-align: center;
+            font-size: 13px;
+            margin-top: 6px;
+            margin-left: 50px;
+            margin-bottom: 1px;
+        }
+        .receipt-std-detail{
+            height: 100px;
+            font-size: 14px;
+            margin-left: 3px;
+            margin-bottom: -8px;
+        }
+        .receipt-table{
+          height: 290px;
+          margin-top: -20px;
+          display: flex;
+          text-align: center;
+          font-size: 14px;
+          
+        }
+        .sr-no{
+            width: 70px;
+            border: 1px solid gray;
+            margin-left: 3px;
+        }
+        .account{
+            width: 500px;
+            border: 1px solid gray;
+            border-left: none;
+            text-align: start;
+        }
+        .amount{
+            width: 255px;
+            border: 1px solid gray;
+            border-left: none;
+            margin-right: 3px;
+            text-align: end;
+        }
+        .receipt-table-h5{
+            margin-top: 1px;
+            margin-bottom: -1px;
+        }
+        .receipt-table-h5-acc{
+            margin-top: 1px;
+            margin-bottom: -1px;
+            text-align: center;
+        }
+        .receipt-table-p{
+            margin-top: -5px;
+            margin-bottom: -1px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .transaction-details{
+            height: 140px;
+            margin-top: -15px;
+            margin-left: 3px;
+            font-size: 14px;
+        }
+        .transaction-details-p{
+            margin-top: -10px;
+        }
+        .receipt-footer{
+            height: 95px;
+            margin-top: -15px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .receipt-footer-p{
+            margin-top: -15px;
+        }
+        
+      }
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 601px) and (max-width: 992px) {
+        
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 993px) and (max-width: 1560px) {
+        
+    }
     </style>
 </head>
 <body>
@@ -116,9 +235,8 @@
             <hr>
         </div>
         <div class="receipt-std-detail">
-           <p><b> Received with thanks form :</b>  Thorat Shraddha Annasaheb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <p><b> Received with thanks form :</b>  Thorat Shraddha Annasaheb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
             <b>ErpStudent ID :</b> 2454****</p>
            <p><b>Course Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b> F.Y.MSc(Computer Science)</p>
            <hr>
@@ -167,14 +285,14 @@
            </div>
         </div>
         <div>
-            <p><b>Amount In Words:</b> Rupees Seventy Three Thousand only</p>
+            <p style="font-size: 14px; margin-left: 3px;"><b>Amount In Words:</b> Rupees Seventy Three Thousand only</p>
         </div>
         <hr>
         <div class="transaction-details">
             <h4>Transaction Details</h4>
             <p class="transaction-details-p"><b> Receipt No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> &nbsp;&nbsp;&nbsp;&nbsp;  University Fee/5231 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Receipt Date &nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30/11/2024 </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Receipt Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30/11/2024 </p>
             <p class="transaction-details-p"><b>Transaction ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> &nbsp;&nbsp;&nbsp;&nbsp;  659611</p>
             <p class="transaction-details-p"><b>EaseBuzz ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> &nbsp;&nbsp;&nbsp;&nbsp;  E221133BR5HW</p>
             <p class="transaction-details-p"><b>Transaction Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> &nbsp;&nbsp;&nbsp;&nbsp; 30/11/2024</p>
